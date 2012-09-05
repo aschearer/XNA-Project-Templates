@@ -1,0 +1,25 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Portable Game</Name>
+        <Description>A game with the capability to run on multiple platforms using XNA</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="Common" ReplaceParameters="true">
+                Common\Common.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="Content" ReplaceParameters="true">
+                Content\Content.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="Test" ReplaceParameters="true">
+                Test\Test.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="Win7" ReplaceParameters="true">
+                Win7\Win7.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
