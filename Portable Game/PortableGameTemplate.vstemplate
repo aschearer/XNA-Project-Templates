@@ -5,19 +5,20 @@
         <Description>A game with the capability to run on multiple platforms using XNA</Description>
         <Icon>Icon.ico</Icon>
         <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>false</CreateNewFolder>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
-            <ProjectTemplateLink ProjectName="Common" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Common" ReplaceParameters="true">
                 Common\Common.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="Content" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Content" ReplaceParameters="true">
                 Content\Content.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="Test" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Test" ReplaceParameters="true">
                 Test\Test.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="Win7" ReplaceParameters="true">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Win7" ReplaceParameters="true">
                 Win7\Win7.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
